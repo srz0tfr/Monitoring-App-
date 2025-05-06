@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MobileMonitoringApp</string>
+    <string name="unknown_status">Device Security Status: Unknown</string>
+    <string name="no_threats">No threats detected</string>
+    <string name="threats_found">Threats found: %1$d</string>
+
+
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+
+   
+    <string name="chatbot_title">My Chatbot</string>
+    <string name="type_your_message">Type your message...</string>
+    <string name="send">Send</string>
+</resources>

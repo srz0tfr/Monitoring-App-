@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <Button
+        android:id="@+id/signupGoogleButton"
+        android:layout_width="335dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#4FC3F7"
+        android:drawableLeft="@drawable/google"
+        android:text="Sign up with Google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailBox"
+        android:layout_width="335dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+    <Button
+        android:id="@+id/confirmSignUp"
+        android:layout_width="335dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="444dp"
+        android:backgroundTint="#B3E0CF"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passBox2"
+        android:layout_width="335dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passBox" />
+
+    <EditText
+        android:id="@+id/passBox"
+        android:layout_width="335dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox" />
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="44dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:paddingLeft="5dp"
+        android:paddingTop="1dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupGoogleButton" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:paddingLeft="5dp"
+        android:paddingTop="1dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupGoogleButton" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Or"
+        android:textAllCaps="false"
+        android:textColor="#606060"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/signupGoogleButton" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:background="#00FFFFFF"
+        android:drawableRight="@android:drawable/ic_menu_revert"
+        android:text="Cancel"
+        android:textColor="#606060"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
